@@ -36,7 +36,7 @@ namespace Eszter_2020._11._04
                 string sor = beolvas.ReadLine();
 
             }
-            beolvas.Close();//
+            beolvas.Close();
         }
     }
 }
