@@ -34,7 +34,12 @@ namespace Eszter_2020._11._04
             while (!beolvas.EndOfStream)
             {
                 string sor = beolvas.ReadLine();
-
+                //Létrehozunk egy dinamikus tömböt, majd az elválasztó mentén belrekjuk a tömb megfelelő indexébe
+                //Csak String tömbbe tudom beletenni!
+                string[] db = sor.Split(' ');//Darabolunk valamilyen karakter mentén!
+                Elso_struktura[szamlalo].szamok = int.Parse(db[0]);
+                Elso_struktura[szamlalo].szavak = db[1];
+                szamlalo++;
             }
             beolvas.Close();
 
