@@ -29,7 +29,7 @@ namespace Eszter_2020._11._04
         {
             //Példányosítom a struktúrámat!
             Adat[] Elso_struktura = new Adat[20];
-            StreamReader beolvas = new StreamReader(@"C: \Users\Rendszergazda\Downloads\eszter_beolvas.txt");
+            StreamReader beolvas = new StreamReader(@"C:\Users\Rendszergazda\Downloads\eszter_beolvas.txt");
             int szamlalo = 0;
             while (!beolvas.EndOfStream)
             {
@@ -37,6 +37,8 @@ namespace Eszter_2020._11._04
 
             }
             beolvas.Close();
+
+            Console.ReadKey();
         }
     }
 }
